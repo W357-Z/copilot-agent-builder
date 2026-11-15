@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "report_no": "SAMPLE-0001",
+    "classification": "Level 3 - Medium consequence / Moderate potential",
+    "privileged": false,
+    "prepared_date": "2026-10-22",
+    "note": "SAMPLE DATA - synthetic names and details for smoke-testing only"
+  },
+  "incident": {
+    "title": "Unauthorised vessel within dam wall exclusion zone",
+    "type": "Security",
+    "date": "2026-01-07",
+    "time": "07:30",
+    "inx_ref": "SAMPLE-0001",
+    "risk_actual": "Moderate",
+    "risk_potential": "Major",
+    "involved_parties": "Sample Worker A (Horticulturist); Sample Worker B (Grounds and Catchment Officer)",
+    "building": "Lake Awoonga - Dam Wall",
+    "location": "Whole of GAWB / Lake Awoonga recreation area",
+    "activity_type": "Recreation area inspection",
+    "risk_assessment": "Area inspection checklist",
+    "standard_controls": "Yes",
+    "standard_ref": "Sample SOP-REC-014 Recreation Area Patrol",
+    "description": "During a pontoon mooring inspection at the dam wall, two workers observed a recreational vessel inside the marked exclusion zone. The workers photographed the vessel, alerted the operator, and directed the vessel out of the restricted area. The operator complied immediately.",
+    "basic_event": "Recreational vessel operated inside the dam wall exclusion zone during a mooring inspection",
+    "injuries": "Nil injuries or damage. Potential consequence: unauthorised access to critical water infrastructure.",
+    "immediate_actions": "Workers instructed the vessel to leave the exclusion zone; photographs taken; Queensland Police report submitted; incident notified to Natural Resources and Recreation Manager and Health and Safety Manager."
+  },
+  "assumptions": "Investigation limited to the security response process; police evidence not available to the investigation team at time of reporting.",
+  "basic_cause": "Exclusion zone signage and patrol presence did not deter recreational vessel entry before workers identified the breach.",
+  "factors": {
+    "absent_failed": [
+      {"code": "DF1", "text": "Detection: exclusion zone breach relied on incidental observation by nearby workers", "reason": "No scheduled surveillance of the zone at that hour"},
+      {"code": "DF3", "text": "Warning: no audible or visual alarm on zone entry", "reason": "Warning system not installed for water-side zone"}
+    ],
+    "individual_team": [
+      {"code": "IT10", "text": "Hazard recognition delayed until visual sighting", "reason": "Breach only identified after entering line of sight"}
+    ],
+    "task_env": [
+      {"code": "WF5", "text": "Large water area with limited sight lines from patrol vantage points", "rating": "Significant", "reason": "Geometry of dam wall limits observation coverage"}
+    ],
+    "organisational": [
+      {"code": "RM", "text": "Risk assessment for recreation access did not schedule surveillance controls for early morning", "reason": "Control verification due date exceeded"},
+      {"code": "CO", "text": "Public communication of exclusion zone boundaries limited to signage", "reason": "No companion education campaign recorded"}
+    ]
+  },
+  "peepo": {
+    "people": [
+      {"text": "Workers identified the breach and responded correctly and promptly", "ref": "E-02"},
+      {"text": "Vessel operator did not recognise the exclusion zone boundary", "ref": "E-01"}
+    ],
+    "environment": [
+      {"text": "Large water area with limited sight lines from patrol vantage points", "ref": "E-01"}
+    ],
+    "equipment": [
+      {"text": "No audible or visual alarm on exclusion zone entry", "ref": "E-01"}
+    ],
+    "procedures": [
+      {"text": "Detection relied on incidental observation by nearby workers; no scheduled surveillance", "ref": "E-02"},
+      {"text": "Recreation access risk assessment did not identify early morning as a higher-risk period", "ref": "E-03"}
+    ],
+    "organisation": [
+      {"text": "Public communication of exclusion zone boundaries limited to signage", "ref": "E-03"},
+      {"text": "Control verification due date exceeded for the recreation access risk assessment", "ref": "E-03"}
+    ]
+  },
+  "conclusions": "The investigation concluded the breach occurred because scheduled surveillance and warning controls for the exclusion zone were absent during early morning hours, and public awareness of the zone relied on signage alone.",
+  "recommendations": [
+    {"text": "Extend scheduled surveillance coverage of the dam wall exclusion zone to include early morning periods, using existing camera and patrol resources.", "control_type": "Engineering / Administrative"},
+    {"text": "Review and refresh public communication of exclusion zone boundaries across boat ramp signage and recreation publications.", "control_type": "Administrative"}
+  ],
+  "learnings": [
+    "Exclusion zones around critical infrastructure require surveillance scheduling matched to actual access patterns, not only daylight patrol periods.",
+    "Positive finding: workers responded correctly and promptly, using photography and direct engagement without placing themselves at risk."
+  ],
+  "cap": [
+    {"recommendation": "Extend surveillance coverage to early morning periods", "dept": "Natural Resources and Recreation", "person": "Sample Coordinator C", "due": "2027-01-31"},
+    {"recommendation": "Refresh exclusion zone public communication", "dept": "Communications", "person": "Sample Coordinator D", "due": "2027-02-28"}
+  ],
+  "timeline": [
+    {"time": "06:50", "event": "Workers arrive at dam wall to inspect pontoon moorings", "source": "Witness statement W1"},
+    {"time": "~07:25", "event": "Workers observe recreational vessel inside exclusion zone", "source": "Photos P1-P3"},
+    {"time": "~07:30", "event": "Workers photograph vessel and direct operator from zone", "source": "Witness statement W2"},
+    {"time": "07:45", "event": "Police report submitted with photo evidence", "source": "Police confirmation email"},
+    {"time": "09:10", "event": "Incident notified to Recreation Manager and H&S Manager", "source": "Notification record"}
+  ],
+  "fivewhys": [
+    {"question": "Why was the vessel inside the exclusion zone?", "answer": "The operator launched at a public ramp and proceeded past signage without recognising the boundary."},
+    {"question": "Why was the breach not detected earlier?", "answer": "No scheduled surveillance of the zone during early morning; detection relied on nearby workers."},
+    {"question": "Why was surveillance not scheduled?", "answer": "Recreation access risk assessment did not identify early morning as a higher-risk period."},
+    {"question": "Why did the risk assessment miss this period?", "answer": "Assessment was last reviewed before patrol schedules changed and was overdue for revalidation."},
+    {"question": "Why was the overdue review not actioned?", "answer": "No monitoring trigger existed for overdue risk assessment reviews in the recreation area program."}
+  ],
+  "evidence": [
+    {"id": "E-01", "description": "Scene photographs of vessel within exclusion zone", "type": "Digital", "source": "Worker mobile device", "status": "Fact", "location": "Event Management System attachments", "collected_by": "Sample Worker A", "collected_at": "2026-01-07"},
+    {"id": "E-02", "description": "Witness statement - Grounds and Catchment Officer", "type": "Testimonial", "source": "Appendix D statement form", "status": "Fact", "location": "Investigation file", "collected_by": "Lead Investigator", "collected_at": "2026-01-09"},
+    {"id": "E-03", "description": "Queensland Police report confirmation", "type": "Documentary", "source": "Police correspondence", "status": "Fact", "location": "Investigation file", "collected_by": "Lead Investigator", "collected_at": "2026-01-10"}
+  ],
+  "plan": {
+    "scope": "Investigate the circumstances of the unauthorised vessel entry, the adequacy of exclusion zone controls, and the security response process.",
+    "objectives": "Establish facts; identify absent or failed defences and organisational factors; recommend corrective actions per the hierarchy of controls.",
+    "team": "Lead Investigator plus Safety Systems Specialist",
+    "method": "ICAM per MPR-INT-0214; PEEPO data collection; witness interviews per Appendix D",
+    "timeframe_days": "25",
+    "due_date": "2026-11-20",
+    "lpp": "No",
+    "approval_path": "Relevant leader"
+  },
+  "witness": {
+    "name": "Sample Worker B",
+    "occupation": "Grounds and Catchment Officer (GAWB)",
+    "date_time": "2026-01-07 07:30",
+    "location": "Lake Awoonga dam wall pontoon area",
+    "statement": "We were checking pontoon moorings when we noticed a boat inside the exclusion zone near the dam wall. I observed Sample Worker A photograph the vessel and get the operator's attention. The operator was told to leave the area immediately and complied. The vessel registration was recorded and passed to police."
+  },
+  "team_members": [
+    {"name": "Sample Lead I", "role": "Lead Investigator (GAWB)", "date": "2026-10-22"},
+    {"name": "Sample Specialist S", "role": "Safety Systems Specialist (GAWB)", "date": "2026-10-22"}
+  ],
+  "approval": {
+    "name": "Sample Manager E",
+    "role": "Health and Safety Manager (GAWB)",
+    "date": "2026-10-23",
+    "conditions": "Approved with one condition: the recommended surveillance coverage change is to be verified against the current recreation risk assessment before implementation sign-off."
+  },
+  "appendices": [
+    {"name": "Appendix C - Analysis of Contributory Factors", "reference": "MPR-INT-0214 Appendix C", "date": "2026-10-22", "type": "Analysis worksheet"},
+    {"name": "ICAM analysis chart", "reference": "icam-chart.png", "date": "2026-10-22", "type": "Chart"},
+    {"name": "PEEPO chart", "reference": "peepo-chart.png", "date": "2026-10-22", "type": "Chart"},
+    {"name": "Timeline chart", "reference": "icam-timeline.png", "date": "2026-10-22", "type": "Chart"},
+    {"name": "5-Whys analysis", "reference": "icam-5whys.png", "date": "2026-10-22", "type": "Chart"},
+    {"name": "Corrective Action Plan", "reference": "cap-plan.docx", "date": "2026-10-22", "type": "Plan"},
+    {"name": "Witness statements", "reference": "Appendix D forms", "date": "2026-10-22", "type": "Statements"}
+  ],
+  "photos": [
+    {"description": "SAMPLE: vessel inside exclusion zone - wide view", "image": ""},
+    {"description": "SAMPLE: vessel within zone - close view with registration visible", "image": ""}
+  ]
+}
